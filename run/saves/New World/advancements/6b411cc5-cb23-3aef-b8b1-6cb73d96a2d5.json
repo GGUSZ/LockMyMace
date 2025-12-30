@@ -1,0 +1,57 @@
+{
+  "nightsawesomemod:recipes/misc/cenga_block": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence_gate": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_slab": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert": "2025-10-25 18:17:03 +0200"
+    },
+    "done": false
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_door": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_stairs": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 18:17:03 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/throw_trident": {
+    "criteria": {
+      "shot_trident": "2025-11-10 23:55:19 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

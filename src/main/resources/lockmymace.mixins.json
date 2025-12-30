@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.ggusz.lockmymace.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "PreventHopperInsertMixin",
+      "PreventSlotInsertionMixin"
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,81 @@
+{
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2025-11-12 07:27:25 +0100"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_block": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence_gate": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-11-12 07:20:02 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-11-12 07:20:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-11-12 07:27:23 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2025-11-12 07:27:25 +0100"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_slab": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2025-11-12 07:27:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert": "2025-11-12 07:20:03 +0100"
+    },
+    "done": false
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_door": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_stairs": {
+    "criteria": {
+      "has_cenga_plush": "2025-11-12 07:24:10 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

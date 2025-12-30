@@ -1,0 +1,69 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-08-15 12:43:38 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert": "2025-08-15 12:43:39 +0200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2025-08-15 12:47:32 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2025-08-15 12:47:32 +0200"
+    },
+    "done": false
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2025-08-15 12:47:32 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_block": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence_gate": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_slab": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_fence": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_door": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "nightsawesomemod:recipes/misc/cenga_stairs": {
+    "criteria": {
+      "has_cenga_plush": "2025-10-25 14:43:02 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -1,0 +1,200 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000076fa76abf201, pid=13921, tid=13923
+#
+# JRE version: OpenJDK Runtime Environment Corretto-23.0.2.7.1 (23.0.2+7) (build 23.0.2+7-FR)
+# Java VM: OpenJDK 64-Bit Server VM Corretto-23.0.2.7.1 (23.0.2+7-FR, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libgallium-25.0.0-devel.so+0x6bf201]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -F%F -- %E" (or dumping to /media/gusgus/Da NEW Drive/WORKSPACE/MINECRAFT/Mods/nightsawesomemod/run/core.13921)
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-23/issues/
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Ddebugger.agent.enable.coroutines=true -Dfabric.dli.config=/media/gusgus/Da@@0020NEW@@0020Drive/WORKSPACE/MINECRAFT/Mods/nightsawesomemod/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=127.0.0.1:34089 -javaagent:/home/gusgus/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/plugins/java/lib/rt/debugger-agent.jar=file:///tmp/capture18093683268587119134.props -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant net.fabricmc.devlaunchinjector.Main
+
+Host: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz, 6 cores, 19G, Ubuntu 25.10
+Time: Mon Dec 15 18:45:26 2025 CET elapsed time: 61.786662 seconds (0d 0h 1m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000076fb64035680):  JavaThread "Render thread"        [_thread_in_native, id=13923, stack(0x000076fb69500000,0x000076fb69600000) (1024K)]
+
+Stack: [0x000076fb69500000,0x000076fb69600000],  sp=0x000076fb695fd5f0,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libgallium-25.0.0-devel.so+0x6bf201]
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 14552  org.lwjgl.opengl.GL11C.nglTexSubImage2D(IIIIIIIIJ)V (0 bytes) @ 0x000076fb5475df96 [0x000076fb5475df20+0x0000000000000076]
+J 14571 c2 org.lwjgl.opengl.GL11C.glTexSubImage2D(IIIIIIIIJ)V (18 bytes) @ 0x000076fb5477aae4 [0x000076fb5477aa80+0x0000000000000064]
+J 23367 c2 net.minecraft.client.texture.NativeImage.upload(IIIIIIIZZ)V (22 bytes) @ 0x000076fb54c6621c [0x000076fb54c65dc0+0x000000000000045c]
+J 25281 c2 net.minecraft.client.texture.SpriteAtlasTexture.tickAnimatedSprites()V (43 bytes) @ 0x000076fb54e10530 [0x000076fb54e102a0+0x0000000000000290]
+J 24183 c1 net.minecraft.client.texture.SpriteAtlasTexture.tick()V (23 bytes) @ 0x000076fb4dce66d4 [0x000076fb4dce6300+0x00000000000003d4]
+J 24449 c1 net.minecraft.client.texture.TextureManager.tick()V (39 bytes) @ 0x000076fb4dd78afc [0x000076fb4dd78780+0x000000000000037c]
+J 22954 c1 net.minecraft.client.MinecraftClient.tick()V (809 bytes) @ 0x000076fb4d7592cc [0x000076fb4d758ee0+0x00000000000003ec]
+J 15085 c1 net.minecraft.client.MinecraftClient.render(Z)V (1119 bytes) @ 0x000076fb4cf469dc [0x000076fb4cf45840+0x000000000000119c]
+j  net.minecraft.client.MinecraftClient.run()V+118
+j  net.minecraft.client.main.Main.main([Ljava/lang/String;)V+1546
+j  java.lang.invoke.LambdaForm$DMH+0x000076faeb093000.invokeStaticInit(Ljava/lang/Object;Ljava/lang/Object;)V+10 java.base@23.0.2
+j  java.lang.invoke.LambdaForm$MH+0x000076faeb004400.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V+19 java.base@23.0.2
+j  net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(Ljava/lang/ClassLoader;)V+74
+j  net.fabricmc.loader.impl.launch.knot.Knot.launch([Ljava/lang/String;Lnet/fabricmc/api/EnvType;)V+40
+j  net.fabricmc.loader.impl.launch.knot.KnotClient.main([Ljava/lang/String;)V+4
+j  java.lang.invoke.LambdaForm$DMH+0x000076faeb003c00.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;)V+10 java.base@23.0.2
+j  java.lang.invoke.LambdaForm$MH+0x000076faeb004400.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V+19 java.base@23.0.2
+j  net.fabricmc.devlaunchinjector.Main.main([Ljava/lang/String;)V+307
+v  ~StubRoutines::call_stub 0x000076fb53b37c86
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000008
+
+Registers:
+RAX=0x0000000000000000, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x000076fb695fd5f0, RBP=0x0000000000000000, RSI=0x08a7264945204700, RDI=0x000076fa72ac2c20
+R8 =0x0000000080068890, R9 =0x0000000000000800, R10=0x0000000000000000, R11=0x0000000000000010
+R12=0x000076fa72ac2c20, R13=0x0000000000000001, R14=0x0000000000000000, R15=0x0000000000000000
+RIP=0x000076fa76abf201, EFLAGS=0x0000000000010206, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+
+Register to memory mapping:
+
+RAX=0x0 is null
+RBX=0x0 is null
+RCX=0x0 is null
+RDX=0x0 is null
+RSP=0x000076fb695fd5f0 is pointing into the stack for thread: 0x000076fb64035680
+RBP=0x0 is null
+RSI=0x08a7264945204700 is an unknown value
+RDI=0x000076fa72ac2c20 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+R8 =0x0000000080068890 is an unknown value
+R9 =0x0000000000000800 is an unknown value
+R10=0x0 is null
+R11=0x0000000000000010 is an unknown value
+R12=0x000076fa72ac2c20 points into unknown readable memory: 0x0000000000000000 | 00 00 00 00 00 00 00 00
+R13=0x0000000000000001 is an unknown value
+R14=0x0 is null
+R15=0x0 is null
+
+Top of Stack: (sp=0x000076fb695fd5f0)
+0x000076fb695fd5f0:   000000070fd0a4f0 0000000080068890
+0x000076fb695fd600:   000000070fd0a4f0 0000000080068890
+0x000076fb695fd610:   0000000000001908 0000000000000035
+0x000076fb695fd620:   0000000000001908 0000000000000035
+0x000076fb695fd630:   000076fa727a8700 000076fa7650e990
+0x000076fb695fd640:   00000006d85f05c0 00001401d8400060
+0x000076fb695fd650:   0000000000001908 000076fa7270b300
+0x000076fb695fd660:   0000000000001401 000076fa7655a077
+0x000076fb695fd670:   00000006db890b60 000076fa734ee7e0
+0x000076fb695fd680:   000076fa728ab6d0 000076fa71478340
+0x000076fb695fd690:   000076fa26814000 000076fa727a8700
+0x000076fb695fd6a0:   0000000000000000 000076fa7657a042
+0x000076fb695fd6b0:   0000000600000002 db71216c00000010
+0x000076fb695fd6c0:   000076fa7270b300 0000000600000000
+0x000076fb695fd6d0:   00000007000000d0 000076fa726d6ae0
+0x000076fb695fd6e0:   0000000700000000 000076fa724e1bc0
+0x000076fb695fd6f0:   00000de100000310 0000000600000000
+0x000076fb695fd700:   00000006f4a504b8 ffffffff00000000
+0x000076fb695fd710:   00000006fffffffe ffffffff54c6fe04
+0x000076fb695fd720:   db0be0e0695fe318 000000070fd0a760
+0x000076fb695fd730:   000076fb695fe318 000076fb4dc7ae3c
+0x000076fb695fd740:   000076fb695fe318 000076fb4dc5a064
+0x000076fb695fd750:   00000006f5479580 000076fb54c1b5d8
+0x000076fb695fd760:   00000006f5479560 00000006f46f3900
+0x000076fb695fd770:   000000070fd0abe0 0000000000000000
+0x000076fb695fd780:   000076fb695fe318 000076fb4dc7aa24
+0x000076fb695fd790:   000000070fd0ace0 000076fb54adb1b8
+0x000076fb695fd7a0:   000000070fd0aa88 000076fb54d7881c
+0x000076fb695fd7b0:   dea8f41800000811 000000070fd0a950
+0x000076fb695fd7c0:   000000070fd0ace0 000076fb54adae20
+0x000076fb695fd7d0:   000000070fd0abe0 00000006f3192648
+0x000076fb695fd7e0:   000076fb695fe318 000076fb4dcc4b4c 
+
+Instructions: (pc=0x000076fa76abf201)
+0x000076fa76abf101:   0f 1e fa 0f b7 ff 89 f8 c1 e0 0d 25 00 e0 ff 0f
+0x000076fa76abf111:   66 0f 6e c0 f3 0f 59 05 9b ca ad 00 0f 2f 05 6c
+0x000076fa76abf121:   c9 ad 00 66 0f 7e c0 72 05 0d 00 00 80 7f c1 e7
+0x000076fa76abf131:   10 81 e7 00 00 00 80 09 c7 66 0f 6e c7 c3 90 f3
+0x000076fa76abf141:   0f 1e fa 66 83 ff 03 76 26 0f b7 ff b8 1e 00 00
+0x000076fa76abf151:   00 0f bd d7 83 f2 1f 8d 4a f1 29 d0 d3 e7 c1 e0
+0x000076fa76abf161:   0a 66 c1 ef 06 09 f8 c3 0f 1f 80 00 00 00 00 89
+0x000076fa76abf171:   f8 c1 e0 08 c3 66 2e 0f 1f 84 00 00 00 00 00 f3
+0x000076fa76abf181:   0f 1e fa 39 f7 0f 94 c0 c3 66 0f 1f 44 00 00 41
+0x000076fa76abf191:   57 89 f6 41 56 49 89 f0 41 55 41 54 49 89 fc 55
+0x000076fa76abf1a1:   53 48 83 ec 18 8b 4f 20 48 89 54 24 08 48 8b 57
+0x000076fa76abf1b1:   28 49 89 ce 48 0f af d6 48 0f af 77 30 48 89 d0
+0x000076fa76abf1c1:   48 f7 e1 48 89 f0 48 89 d1 41 89 d7 8b 57 24 89
+0x000076fa76abf1d1:   cb 48 f7 e2 44 8d 6a 01 eb 18 0f 1f 44 00 00 44
+0x000076fa76abf1e1:   01 eb 89 d8 44 29 f0 44 39 f3 0f 43 d8 44 39 fb
+0x000076fa76abf1f1:   74 55 89 d8 48 8d 0c 40 49 8b 04 24 48 8d 2c c8
+0x000076fa76abf201:   48 8b 75 08 48 85 f6 74 3e 49 3b 74 24 18 74 cf
+0x000076fa76abf211:   44 39 45 00 75 c9 44 89 44 24 04 48 8b 7c 24 08
+0x000076fa76abf221:   41 ff 54 24 10 44 8b 44 24 04 84 c0 74 b1 48 83
+0x000076fa76abf231:   c4 18 48 89 e8 5b 5d 41 5c 41 5d 41 5e 41 5f c3
+0x000076fa76abf241:   0f 1f 80 00 00 00 00 31 ed eb e3 0f 1f 40 00 f3
+0x000076fa76abf251:   0f 1e fa 48 89 f8 48 89 fa 48 c1 ea 06 48 c1 e8
+0x000076fa76abf261:   02 31 d0 48 89 fa 48 c1 ef 0e 48 c1 ea 0a 31 d0
+0x000076fa76abf271:   31 f8 c3 66 2e 0f 1f 84 00 00 00 00 00 66 90 f3
+0x000076fa76abf281:   0f 1e fa 48 39 fe 0f 94 c0 c3 0f 1f 44 00 00 41
+0x000076fa76abf291:   57 41 89 f7 41 56 49 89 fe 41 55 41 54 55 53 48
+0x000076fa76abf2a1:   83 ec 18 44 39 7f 3c 0f 84 8a 01 00 00 41 83 ff
+0x000076fa76abf2b1:   1e 76 14 48 83 c4 18 5b 5d 41 5c 41 5d 41 5e 41
+0x000076fa76abf2c1:   5f c3 0f 1f 44 00 00 44 89 fb 4c 8d 25 0e 0c b5
+0x000076fa76abf2d1:   00 49 8b 3e 48 c1 e3 05 49 8d 0c 1c 8b 69 04 48
+0x000076fa76abf2e1:   89 4c 24 08 e8 46 69 00 00 be 18 00 00 00 48 89
+0x000076fa76abf2f1:   c7 89 ea e8 77 64 00 00 49 89 c2 48 85 c0 74 b3 
+
+
+Stack slot to memory mapping:
+
+stack at sp + 0 slots: 0x000000070fd0a4f0 is an oop: net.minecraft.client.render.BufferBuilder$BuiltBuffer 
+{0x000000070fd0a4f0} - klass: 'net/minecraft/client/render/BufferBuilder$BuiltBuffer'
+ - ---- fields (total size 4 words):
+ - private final 'batchOffset' 'I' @12  0 (0x00000000)
+ - private 'released' 'Z' @16  true (0x01)
+ - private final 'parameters' 'Lnet/minecraft/client/render/BufferBuilder$DrawParameters;' @20  a 'net/minecraft/client/render/BufferBuilder$DrawParameters'{0x000000070fd0a4c8} (0xe1fa1499)
+ - public final synthetic 'field_39063' 'Lnet/minecraft/client/render/BufferBuilder;' @24  a 'net/minecraft/client/render/BufferBuilder'{0x00000006d8400060} (0xdb08000c)
+stack at sp + 1 slots: 0x0000000080068890 is an unknown value
+stack at sp + 2 slots: 0x000000070fd0a4f0 is an oop: net.minecraft.client.render.BufferBuilder$BuiltBuffer 
+{0x000000070fd0a4f0} - klass: 'net/minecraft/client/render/BufferBuilder$BuiltBuffer'
+ - ---- fields (total size 4 words):
+ - private final 'batchOffset' 'I' @12  0 (0x00000000)
+ - private 'released' 'Z' @16  true (0x01)
+ - private final 'parameters' 'Lnet/minecraft/client/render/BufferBuilder$DrawParameters;' @20  a 'net/minecraft/client/render/BufferBuilder$DrawParameters'{0x000000070fd0a4c8} (0xe1fa1499)
+ - public final synthetic 'field_39063' 'Lnet/minecraft/client/render/BufferBuilder;' @24  a 'net/minecraft/client/render/BufferBuilder'{0x00000006d8400060} (0xdb08000c)
+stack at sp + 3 slots: 0x0000000080068890 is an unknown value
+stack at sp + 4 slots: 0x0000000000001908 is an unknown value
+stack at sp + 5 slots: 0x0000000000000035 is an unknown value
+stack at sp + 6 slots: 0x0000000000001908 is an unknown value
+stack at sp + 7 slots: 0x0000000000000035 is an unknown value
+
+Lock stack of current Java thread (top to bottom):
+
+
+Compiled method (n/a) 61800 14552     n 0       org.lwjgl.opengl.GL11C::nglTexSubImage2D (native)
+ total in heap  [0x000076fb5475de08,0x000076fb5475e118] = 784
+ relocation     [0x000076fb5475dee0,0x000076fb5475df18] = 56
+ main code      [0x000076fb5475df20,0x000076fb5475e10a] = 490
+ stub code      [0x000076fb5475e10a,0x000076fb5475e110] = 6
+ oops           [0x000076fb5475e110,0x000076fb5475e118] = 8
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x000076fa6c3198f0} 'nglTexSubImage2D' '(IIIIIIIIJ)V' in 'org/lwjgl/opengl/GL11C'
+  # parm0:    rsi       = int
+  # parm1:    rdx       = int
+  # parm2:    rcx       = int
+  # parm3:    r8        = int
+  # parm4:    r9        = int
+  # parm5:    rdi       = int
+  # parm6:    [sp+0x80]   = int  (sp of caller)
+  # parm7:    [sp+0x88]   = int
+  # parm8:    [sp+0x90]   = long
+  0x000076fb5475df20: 6690 448b 

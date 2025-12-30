@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "lockmymace",
+	"version": "${version}",
+	"name": "LockMyMace",
+	"description": "Locks the Mace from being put in any container",
+	"authors": [
+		"GGUSZ"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/lockmymace/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.ggusz.lockmymace.LockMyMace"
+		],
+		"fabric-datagen": [
+		],
+		"client": [
+			"net.ggusz.lockmymace.LockMyMaceClient"
+		]
+	},
+	"mixins": [
+		"lockmymace.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+	}
+}
